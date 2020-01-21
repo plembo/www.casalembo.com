@@ -2,52 +2,66 @@
 <html>
 	<head>
 		<title>Casa Lembo</title>
-		<meta charset="utf-8">
+        <meta charset="utf-8">
 		<meta name="description" content="Lembo Home page">
 		<meta name="keywords" content="Lembo,Home">
 		<meta name="author" content="Phil Lembo">
-        <meta name="google-site-verification" content="Dnx5vqY3LpzTBtsgtvtKWnRggAXKW8g8kV9PQ6tkOk4" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="js/jquery-3.3.1.slim.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/home.css">
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135577867-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-135577867-1');
-        </script>
 	</head>
     <body>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-success">
 			<a class="navbar-brand" href="/">Casa Lembo</a>				
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link" href="https://www.bbc.com/news/world" target="_blank">Global News</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="https://www.indyweek.com" target="_blank">Local News</a>
+					<li class="navitem dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">News</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="https://www.bbc.com/news/world" target="_blank">Global News</a>
+							<a class="dropdown-item" href="https://www.indyweek.com" target="_blank">Local News</a>
+						</div>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="https://www.timeanddate.com/worldclock/" target="_blank">Current Time</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="https://wttr.in" target="_blank">Local Weather</a>
+						<a class="nav-link" href="https://forecast.weather.gov/MapClick.php?lat=35.80655490000004&lon=-78.78047509999999" target="_blank">Local Weather</a>
 					</li>   
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Resources</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="/media/" target="_blank">Media</a>
+							<a class="dropdown-item" href="/install/" target="_blank">Software Library</a>
+							<a class="dropdown-item" href="/media/education/" target="_blank">Education</a>
+							<a class="dropdown-item" href="/media/family/pictures/" target="_blank">Pictures</a>
+							<a class="dropdown-item" href="/media/family/video/" target="_blank">Video</a>
+							<a class="dropdown-item" href="/movies/" target="_blank">Movies</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Apps</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="https://media.casalembo.com" target="_blank">Media Server</a>
+							<a class="dropdown-item" href="https://library.casalembo.com" target="_blank">E-Book Server</a>
+							<a class="dropdown-item" href="/passchk/passchk.html" target="_blank">Passphrase Strength Checker</a>
+							<a class="dropdown-item" href="/javascrypt/pass_phrase.html" target="_blank">Passphrase Generator</a>
+							<a class="dropdown-item" href="/mrtg" target="_blank">MRTG</a>
+							<a class="dropdown-item" href="https://darkstat.casalembo.com" target="_blank">Darkstat</a>
+							<a class="dropdown-item" href="/live" target="_blank">Live Outside!</a>
+						</div>
+					</li>
 				</ul>
 			</div>
         </nav>
 		<div>
-			<video autoplay loop poster="/assets/ThroughTheReeds.jpg" id="myVideoBackground" muted="muted">
-               	<source src="/assets/ThroughTheReeds.mp4" type="video/mp4">
+			<video autoplay loop poster="/assets/TropicalWaterfall.jpg" id="myVideoBackground" muted="muted">
+               	<source src="/assets/TropicalWaterfall.mp4" type="video/mp4">
 			</video>
 		</div>
     </body>
