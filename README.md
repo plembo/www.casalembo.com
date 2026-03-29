@@ -7,5 +7,5 @@ This site is being published with GitHub Pages at:
 
 https://www.casalembo.com
 
-&copy;2019-2025 by Phil Lembo
+&copy;2019-2026 by Phil Lembo
 
